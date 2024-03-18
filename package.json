@@ -5,10 +5,6 @@
   "scripts": {
     "test": "vitest"
   },
-  
-    "type": "module",
-    "name": "your-package-name",
-    "version": "1.0.0",
     "dependencies": {
       "axios": "^0.24.0"
     }

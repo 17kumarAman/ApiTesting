@@ -3,7 +3,7 @@ import axios from 'axios';
 
 let api = 'https://dummyjson.com/auth/';
 const postUrl = api + 'login';
-const getUrl =api+ 'auth/me'    
+const getUrl =api+ 'me'    
 let data: any;
 
 // Test with Username or Password using Post Method
