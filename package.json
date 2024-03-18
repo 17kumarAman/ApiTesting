@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "vitest": "^1.4.0"
+  },
+  "scripts": {
+    "test": "vitest"
+  },
+  
+    "type": "module",
+    "name": "your-package-name",
+    "version": "1.0.0",
+    "dependencies": {
+      "axios": "^0.24.0"
+    }
+  }
+
