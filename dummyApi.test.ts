@@ -1,9 +1,9 @@
-import { expect, test, describe, assert } from 'vitest';
+import { expect, test, describe } from 'vitest';
 import axios from 'axios';
 
 let api = 'https://dummyjson.com/auth/';
-const postUrl = api + 'login';
-const getUrl =api+ 'me'    
+const postUrl = `${api}login`;
+const getUrl = `${api}me`
 let data: any;
 
 // Test with Username or Password using Post Method
@@ -22,8 +22,8 @@ describe('API post method tests from dummyjson', async () => {
     })
 })
 
-// Test with incorrect Username or Password using Post Method
-test('If incorrect Username or Password then return invalid JSON.', async () => {
+// Test with invalid Username or Password using Post Method
+test('If invalid Username or Password then return invalid JSON.', async () => {
    try {
     await axios.post(postUrl, {
         username: 'd',
@@ -48,8 +48,8 @@ describe('Get API Tests after login', async () => {
 
 })
 
-// Test for wrong token using Get Method
-test('If incorrect token', async()=>{
+// Test for invalid token using Get Method
+test('If invalid token', async()=>{
     try{
         await axios.get(getUrl, {
             headers: {
